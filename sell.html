@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell a Book | Bibliophile's Bazaar</title>
+    <link rel="stylesheet" href="sell.css"> <!-- Add your own CSS file -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="book.html">Home</a></li>
+            <li><a href="donate.html">Donate a Book</a></li>
+            <!-- Dropdown for Account -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="signup.html">Sign Up</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </li>
+            <!-- Dropdown for Categories -->
+            <li class="dropdown">
+                <button class="dropbtn">Category</button>
+                <div class="dropdown-content">
+                    <a href="fiction.html">Fiction</a>
+                    <a href="non-fiction.html">Non-Fiction</a>
+                    <a href="mystery.html">Mystery</a>
+                    <a href="fantasy.html">Fantasy</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <span>Welcome to the Sell a Book section of Bibliophile's Bazaar!</span>
+    </div>
+
+    <!-- Sell a Book Section -->
+    <section class="sell-book">
+        <h2>Sell Your Book</h2>
+        <form class="sell-form">
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="book-title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="price">Price(Max:500):</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="book-image">Upload Image:</label>
+            <input type="file" id="book-image" name="book-image" accept="image/*" required>
+
+            <button type="submit" class="sell-btn">List My Book</button>
+        </form>
+    </section>
+</body>
+</html>

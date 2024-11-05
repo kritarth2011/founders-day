@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bibliophile's Book</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="book.html">Home</a></li>
+            <li><a href="donate.html">Donate a Book</a></li>
+            <li><a href="sell.html">Sell a Book</a></li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">Category</button>
+            <div class="dropdown-content">
+                <a href="fiction.html">Fiction</a>
+                <a href="non-fiction.html">Non-Fiction</a>
+                <a href="mystery.html">Mystery</a>
+                <a href="fantasy.html">Fantasy</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1 style="text-align: center; color: #d32f2f;">Bibliophile's Book</h1>
+
+    <!-- Login Form Section -->
+    <div class="login-form-container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <!-- Email Address Field -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Text below the form -->
+    <p class="old-english">Welcome to the world of books!</p>
+</body>
+</html>

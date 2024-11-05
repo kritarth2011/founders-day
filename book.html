@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliophile's Bazaar</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="book.html">Home</a></li>
+            <li><a href="sell.html">Sell a Book</a></li>
+            <li><a href="donate.html">Donate a Book</a></li>
+            <!-- Dropdown for Account -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="signup.html">Sign Up</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">Category</button>
+            <div class="dropdown-content">
+                <a href="fiction.html">Fiction</a>
+                <a href="non-fiction.html">Non-Fiction</a>
+                <a href="mystery.html">Mystery</a>
+                <a href="fantasy.html">Fantasy</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <span>Welcome to Bibliophile's Bazaar!</span>
+    </div>
+
+    <!-- Top 5 Books Section -->
+    <section class="top-books">
+        <h2>Top 5 Most Selling Books</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="book1.jpg" alt="Book 1">
+                <a href="book-detail.html?book=the-great-gatsby"><h3>The Great Gatsby</h3></a>
+                <p>by F. Scott Fitzgerald</p>
+                <p class="description">A classic novel that explores themes of wealth, love, and the American Dream in the Jazz Age.</p>
+            </div>
+            <div class="book-item">
+                <img src="book2.jpg" alt="Book 2">
+                <a href="book-detail.html?book=to-kill-a-mockingbird"><h3>To Kill a Mockingbird</h3></a>
+                <p>by Harper Lee</p>
+                <p class="description">A gripping, heart-wrenching tale of race, justice, and morality set in the American South.</p>
+            </div>
+            <div class="book-item">
+                <img src="book3.jpg" alt="Book 3">
+                <a href="book-detail.html?book=1984"><h3>1984</h3></a>
+                <p>by George Orwell</p>
+                <p class="description">A dystopian novel that delves into themes of surveillance, totalitarianism, and truth.</p>
+            </div>
+            <div class="book-item">
+                <img src="book4.jpg" alt="Book 4">
+                <a href="book-detail.html?book=harry-potter-and-the-sorcerers-stone"><h3>Harry Potter and the Sorcerer's Stone</h3></a>
+                <p>by J.K. Rowling</p>
+                <p class="description">The start of a magical journey for a young wizard, filled with friendship, adventure, and courage.</p>
+            </div>
+            <div class="book-item">
+                <img src="book5.jpg" alt="Book 5">
+                <a href="book-detail.html?book=pride-and-prejudice"><h3>Pride and Prejudice</h3></a>
+                <p>by Jane Austen</p>
+                <p class="description">A witty and romantic story about the complex relationships and social class in Regency-era England.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

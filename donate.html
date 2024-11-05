@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate a Book | Bibliophile's Bazaar</title>
+    <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="book.html">Home</a></li>
+            <li><a href="sell.html">Sell a Book</a></li>
+            <li><a href="donate.html">Donate a Book</a></li>
+            <!-- Dropdown for Account -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Account</a>
+                <div class="dropdown-content">
+                    <a href="signup.html">Sign Up</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">Category</button>
+            <div class="dropdown-content">
+                <a href="fiction.html">Fiction</a>
+                <a href="non-fiction.html">Non-Fiction</a>
+                <a href="mystery.html">Mystery</a>
+                <a href="fantasy.html">Fantasy</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Donate a Book Section -->
+    <section class="donate-section">
+        <h2>Donate a Book for Free</h2>
+        <p>Help spread the joy of reading by donating a book. Fill in the details below to donate a book to someone in need.</p>
+
+        <form action="submit_donation.php" method="POST" class="donate-form">
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="condition">Condition of the Book:</label>
+            <select id="condition" name="condition" required>
+                <option value="new">New</option>
+                <option value="like-new">Like New</option>
+                <option value="used">Used</option>
+                <option value="heavily-used">Heavily Used</option>
+            </select>
+
+            <label for="contact">Your Contact Information (email/phone):</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="message">Additional Message (optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Donate Now</button>
+        </form>
+    </section>
+</body>
+</html>

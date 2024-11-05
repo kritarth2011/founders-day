@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #d32f2f; /* Red */
+    --hover-color: #a82727; /* Darker red for hover */
+    --marquee-bg-color: #ffd700; /* Yellow background for marquee */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 15px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background-color: var(--hover-color);
+    border-radius: 4px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: var(--primary-color); /* Red background */
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white; /* White text for better contrast */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--hover-color); /* Change hover color */
+    color: white; /* Keep text white on hover */
+}
+
+/* Show the dropdown when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Marquee styles */
+.marquee {
+    background-color: var(--marquee-bg-color); /* Yellow background */
+    color: white; /* White text */
+    padding: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100vw; /* Full viewport width */
+    position: relative;
+}
+
+.marquee span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 5s linear infinite; /* Adjusted timing for smooth scrolling */
+    position: relative;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); /* Start fully off the right edge */
+    }
+    100% {
+        transform: translateX(-100%); /* End fully off the left edge */
+    }
+}
+
+/* Sell a Book Section */
+.sell-book {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sell-book h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.sell-form {
+    max-width: 400px;
+    margin: 0 auto; /* Center the form */
+    display: flex;
+    flex-direction: column;
+}
+
+.sell-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sell-form input, .sell-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sell-form button.sell-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sell-form button.sell-btn:hover {
+    background-color: var(--hover-color);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Bibliophile's Book</title>
+    <link rel="stylesheet" href="signup.css">
+    <style>
+        /* Old English Text Style */
+        .old-english {
+            font-family: "Old English MT", cursive;
+            text-align: center;
+            margin-top: 20px;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="book.html">Home</a></li>
+            <li><a href="donate.html">Donate a Book</a></li>
+            <li><a href="sell.html">Sell a Book</a></li>   
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">Category</button>
+            <div class="dropdown-content">
+                <a href="fiction.html">Fiction</a>
+                <a href="non-fiction.html">Non-Fiction</a>
+                <a href="mystery.html">Mystery</a>
+                <a href="fantasy.html">Fantasy</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1 style="text-align: center; color: #d32f2f;">Bibliophile's Book</h1> <!-- Header with website name -->
+
+    <!-- Login Form Section -->
+    <div class="login-form-container">
+        <h2>Sign Up</h2>
+        <form action="#" method="post">
+            <!-- Full Name Field -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <!-- Shipping Adress -->
+        <div class="form-group">
+            <label for="Adress">Shipping Adress</label>
+            <input type="text" id="Adress" name="Adress" required>
+        </div>
+
+            <!-- Email Address Field -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Phone Number Field -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Text below the form -->
+    <p class="old-english">Welcome to the world of books!</p> <!-- Example text -->
+</body>
+</html>

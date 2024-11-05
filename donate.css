@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #b71c1c; /* Dark red */
+    --hover-color: #ffcc00; /* Yellow on hover */
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3e0; /* Light yellow background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 15px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background-color: var(--hover-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+}
+
+/* Account Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: var(--primary-color);
+    color:red;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(155, 47, 47);
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--primary-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--hover-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Donate Section Styling */
+.donate-section {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid var(--primary-color); /* Red accent */
+}
+
+.donate-section h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.donate-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.donate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.donate-form label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.donate-form input,
+.donate-form select,
+.donate-form textarea {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: #fff3e0;
+}
+
+.donate-form input:focus,
+.donate-form select:focus,
+.donate-form textarea:focus {
+    border-color: var(--hover-color);
+    outline: none;
+}
+
+.donate-form button {
+    background-color: var(--hover-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.donate-form button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
