@@ -41,6 +41,23 @@ body {
     font-weight: bold;
 }
 
+/* Category Dropdown Button Styles */
+.dropdown .dropbtn {
+    background-color: var(--primary-color); /* Red background */
+    color: white; /* White text */
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.dropdown .dropbtn:hover {
+    background-color: var(--hover-color); /* Darker red on hover */
+}
+
+/* Dropdown Content */
 .dropdown-content {
     display: none;
     position: absolute;
